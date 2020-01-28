@@ -6,7 +6,7 @@
         <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
         <DCC_DependencyCheckOutputName>bin\dclXq.bpl</DCC_DependencyCheckOutputName>
         <ProjectVersion>18.6</ProjectVersion>
-        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Config Condition="'$(Config)'==''">Release</Config>
         <Base>True</Base>
         <AppType>Package</AppType>
         <FrameworkType>None</FrameworkType>
@@ -34,11 +34,11 @@
     <PropertyGroup Condition="'$(Base)'!=''">
         <SanitizedProjectName>dclXq</SanitizedProjectName>
         <DCC_Optimize>false</DCC_Optimize>
-        <DCC_DcpOutput>..\..\lib\D103Rio\$(Platform)\$(Config)</DCC_DcpOutput>
+        <DCC_DcpOutput>..\..\lib</DCC_DcpOutput>
         <DCC_Namespace>System;Winapi;Data;Vcl;$(DCC_Namespace)</DCC_Namespace>
-        <DCC_BplOutput>..\..\bin\D103Rio\$(Platform)\$(Config)</DCC_BplOutput>
-        <DCC_UnitSearchPath>..\..\lib\D103Rio\$(Platform)\$(Config);$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
-        <DCC_DcuOutput>..\..\lib\D103Rio\$(Platform)\$(Config)</DCC_DcuOutput>
+        <DCC_BplOutput>..\..\bin</DCC_BplOutput>
+        <DCC_UnitSearchPath>..\..\lib;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_DcuOutput>..\..\lib</DCC_DcuOutput>
         <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <DllSuffix>_D26</DllSuffix>
